@@ -1,0 +1,121 @@
+@font-face{ /*fonte*/
+    font-family: 'the seasons';
+    src: url('F/Fontspring-DEMO-theseasons-it.otf');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: #6e7b8c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: #5a4324;
+    background-color: #c6c2c2a2;
+    border-radius: 10px;
+    padding: 15px;
+    width: 350px;
+    margin: auto;
+    box-shadow: 5px 5px 10px #0000005f;
+}
+footer {
+    color: #5a4324;
+    font-size: 20px;
+    display: flex;
+    gap: 25px;
+}
+a {
+    text-decoration: none;
+    color: #5a4324;
+}
+a:hover { /* quando o mouse passar em cima */
+    color: #b69198;
+}
+
+h1 {
+    font-size: 25px;
+    font-family: 'the seasons';
+}
+input, button {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+input {
+    border: 2px solid #5a4324;
+    outline: #5a4324;
+    border-radius: 20px;
+    background-color: #c6c2c2;
+    color: #5a4324;
+    width: 300px;
+}
+.input-lupa {
+  position: relative;
+  display: inline-block;
+}
+.input-lupa input {
+  padding-left: 35px; /*espaço para o texto nao ficar em cima do icon de lupa*/
+  font-size: 16px;
+}
+.input-lupa .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none; /*permite clicar direto no input*/
+}
+
+button {
+    border-radius: 25px;
+    background-color: #5a4324;
+    color: #b69198;
+    font-family: 'the seasons';
+    border: none;
+    width: 150px;
+}
+button:active { /*quando botao for clicado*/
+    color: #5a4324;
+    background-color: #b69198;
+}
+ul {
+    list-style: none;
+    columns: 2;
+    padding: 0;
+}
+li {
+    background: #c6c2c2;
+    margin-bottom: 0.5rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 3px 3px 3px #5a4324;
+}
+
+#caixa1 div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 800px){
+    section {
+        width: 450px;
+        flex-direction: column;
+    }
+}
+@media(max-width: 600px){ /*responsividade celular*/
+    section {
+        width: 300px;
+    }
+    input {
+        width: 200px;
+    }
+    footer {
+        font-size: 15px;
+    }
+}

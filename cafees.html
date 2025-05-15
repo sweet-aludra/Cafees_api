@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="IMG/cafe_icon.png">
+    <link rel="stylesheet" href="stilo.css">
+    <script defer src="JS/cod.js"></script>
+    <title>Busque Caféés</title>
+</head>
+<body>
+    <header></header>
+    <section id="caixa">
+        <article id="caixa1">
+            <h1>Busque Caféés</h1>
+            <p>Digite uma cidade ou local (ex: São Paulo):</p>
+            <div>
+                <div class="input-lupa">
+                    <img src="IMG/pesquisa_m.png" alt="buscar" class="icon">
+                    <input type="text" id="localInput" placeholder="...">
+                </div>
+                <button onclick="buscarCafes()">Buscar</button>
+            </div>
+            <picture>
+                <source media="(max-width: 750px)" srcset="IMG/cafezinho_p.png" type="image/png">
+                <img src="IMG/cafezinho_m.png" alt="cafees">
+            </picture>
+        </article>
+        <article id="caixa2">
+            <ul id="resultados"></ul>
+        </article>
+    </section>
+    <footer>
+        <p>Adryelle & Shania</p>
+        <p><a href="http://www.geoapify.com/">API site!</a></p>
+    </footer>
+</body>
+</html>
